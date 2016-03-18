@@ -1,0 +1,142 @@
+* {
+	padding: 0;
+	margin:0;
+	border: none;
+	font-size: 15px;
+}
+a {
+	text-decoration: none;
+	color:#000;
+}
+.section h1 {
+	top: 50px;
+	font-weight: bold;
+	font-size: 35px;
+	letter-spacing: 5px;
+	margin-bottom: 50px;
+
+}
+.section p {
+	font-size: 17px;
+	letter-spacing: 3px;
+	margin-bottom: 50px;
+}
+#headpic {
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	box-shadow: 2px 2px 2px #333;
+	margin-bottom: 20px;
+}
+.scrolltips {
+	bottom: 160px;
+	font-size: 15px;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	margin-left: -30px;
+}
+
+.classify_angle::before, .classify_angle::after {
+content: '';
+width: 30px;
+height: 30px;
+border-top: 2px solid #000;
+border-right: 2px solid #000;
+position: absolute;
+bottom: 100px;
+-webkit-transform: rotate(135deg);
+display: inline-block;
+margin:0 auto;
+margin-left: -15px;
+padding: 0px;
+}
+.classify_angle::after {
+bottom: 120px;
+-webkit-animation: angleafter 1s infinite alternate;
+}
+.classify_angle::before {
+	-webkit-animation: anglebefore 1s infinite alternate;
+	}
+@keyframes anglebefore{
+	from{bottom: 120px;}
+	to {bottom: 100px;}
+}
+@keyframes angleafter {
+	from {bottom: 140px;}
+	to {bottom: 120px;}
+}
+#section2,#section2 a {
+	color: #fff;
+	line-height: 20px;
+}
+#slide1 h3{
+	font-size: 100px
+	font-weight:bolder;
+	margin:15px 0;
+	padding: 5px;
+	display: block;
+	text-align: left;
+	width: 300px;
+	margin-left: 250px;
+}
+#slide2 span,#slide1 h3 {
+	color:#fff;
+	background-color: rgb(2,113,192);
+	opacity: 0.7;
+}
+#personInfo {
+	float: left;
+}
+#slide1 img{
+	margin-right: 15%;
+	float: right;
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+}
+.slide figure {
+	height: 200px;
+	margin-left: 100px;
+	width: 20%;
+	display: inline-block;
+	float: left;
+}
+.slide figcaption {
+	padding: 10px;
+	background-color: rgb(2,113,192);
+	margin-bottom: 20px;
+}
+.slide img {
+	box-shadow: 5px 5px 5px 1px #555;
+	height: 200px;
+	width: 100%;
+
+
+}
+.slide ul {
+	text-align: left;
+	margin-left: 250px;
+	padding: 50px;
+	width: 50%;
+	height: auto;
+	background-color: #ccc;
+	opacity: 0.9;
+	box-shadow: 3px 3px 3px 3px #555;
+}
+.slide li {
+	color:#000;
+	padding: 15px;
+}
+#slide1 span {
+	padding: 5px;
+	display: block;
+	text-align: left;
+	width: 500px;
+	margin-left: 250px;
+}
+#worksList {
+	width: 80%;
+	text-align: center;
+	margin:0 auto;
+}
